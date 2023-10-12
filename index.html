@@ -8,11 +8,11 @@
 </head>
 <body>
     <div id='app'>
-    <input type="text" v-model="word" class="button">
-    <input type="button" value= "Save" v-on:click="addWord(word)" class="button">
-    <input type="button" value= "Show" class="button">
-    <input type="button" value= "Clear" v-on:click="clearList" class="button">
-    <div >{{result }}</div>
+    <input id="inputField" type="text" v-model="word" class="button">
+    <input id="saveButton" type="button" value= "Save" v-on:click="addWord(word)" class="button">
+    <input id="showButton" type="button" value= "Show" class="button">
+    <input id="showButton" type="button" value= "Clear" v-on:click="clearList" class="button">
+    <div id="resultDisplay">{{result }}</div>
     <br/>
     <div >Read counter: {{counter }}</div>
     </div>
